@@ -1,22 +1,40 @@
 # climax: **ᴄʟɪ**pboad **ᴍᴀx**imizer.
 
+[![PyPI version](https://badge.fury.io/py/clipboard-maximizer.svg)](https://badge.fury.io/py/clipboard-maximizer)
+
 > 🐙🖥️🐍➕👮🏻☃️🔧4️⃣👯‍♀️*🫢📁*(🚫🗃️)⏭️📋
 
 *(A* mͫuͧltͭiͥplaͣtͭfoͦrͬmͫ *python library and command line tool for copying 𝕬𝖈𝖙𝖚𝖆𝖑 𝕱𝖎𝖑𝖊𝖘* (ie, not their content) *to the clipboard.)*
 
-## Status
+- [climax: **ᴄʟɪ**pboad **ᴍᴀx**imizer.](#climax-ᴄʟɪpboad-ᴍᴀximizer)
+  - [1.1. Compatibility](#11-compatibility)
+  - [1.2. Installation](#12-installation)
+  - [1.3. Command Line](#13-command-line)
+    - [1.3.1. Python API](#131-python-api)
+  - [1.4. Contributing](#14-contributing)
+  - [1.5. Blah](#15-blah)
 
-[![PyPI version](https://badge.fury.io/py/clipboard-maximizer.svg)](https://badge.fury.io/py/clipboard-maximizer)
+![CLIPboard MAXimizer logo, courtesy of bing](logo.png)
+
+## 1.1. Compatibility
+
+| OS | 🍎 | 🐧 | 🪟 |
+|--|--|--|--|
+| Integration available | ✅ | ✅ | ✅ |
+|--|--|--|--|
+| Tested on device | ✅ | ✅ | ✅ |
+|--|--|--|--|
+|extra requirements| none |`xclip`|`pwsh`|
 
 **macOS** and **Linux** are supported and tested; the latter via `xclip` (`apt-get install xclip`)
 
 **Windows** should be supported (I can run it on mac Powershell via `pwsh`), but I don't have a Windows machine to test it on.
 
-## Installation
+## 1.2. Installation
 
 Use pip, poetry, or your favorite python package manager to install the latest version of the clipboard maximiser: `clipboard_maximizer`.
 
-## Command Line
+## 1.3. Command Line
 
 Install with pipx:
 
@@ -34,7 +52,7 @@ climax file1 --clipboard xclip # use a specific clipboard.
             # are supported).
 ```
 
-### Python API
+### 1.3.1. Python API
 
 Install:
 
@@ -60,7 +78,7 @@ copy_to_clipboard("file1")
 copy_to_clipboard("file1", clipboard="xclip")
 ```
 
-## Contributing
+## 1.4. Contributing
 
 ```bash
 poetry install
@@ -71,6 +89,8 @@ Contributions, in particular windows-related, are welcome.
 
 If you plan to turn this into a full multiplatform clipboard manager, please fork the project and do so; I'll happily transfer the name to you.
 
-## Blah
+![CLIPboard MAXimizer logo, courtesy of bing](logo.png)
+
+## 1.5. Blah
 
 License: MIT.
