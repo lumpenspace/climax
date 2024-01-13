@@ -9,6 +9,7 @@ def copy_to_clipboard(files, climax_clipboard=None):
 
     abs_path = os.path.abspath(__file__)
     dir_name = os.path.dirname(abs_path)
+    
     if system_platform == 'Darwin' or climax_clipboard == 'applescript':
         try:
             subprocess.run(['which', 'osascript'], check=True)
