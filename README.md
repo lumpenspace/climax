@@ -21,9 +21,7 @@
 | OS | 🍎 | 🐧 | 🪟 |
 |--|--|--|--|
 | Integration available | ✅ | ✅ | ✅ |
-|--|--|--|--|
-| Tested on device | ✅ | ✅ | 🙊[[1]](#14-contributing)) |
-|--|--|--|--|
+| Tested on device | ✅ | ✅ | 🙊[[1]](#14-contributing) |
 |extra requirements| none |`xclip`|`pwsh`|
 
 **macOS** and **Linux** are supported and tested; the latter via `xclip` (`apt-get install xclip`)
