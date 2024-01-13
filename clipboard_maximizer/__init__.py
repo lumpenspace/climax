@@ -1,0 +1,1 @@
+from clipboard_maximizer.clipboard_manager import copy_to_clipboard
