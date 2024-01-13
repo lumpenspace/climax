@@ -22,7 +22,7 @@
 |--|--|--|--|
 | Integration available | ✅ | ✅ | ✅ |
 |--|--|--|--|
-| Tested on device | ✅ | ✅ | ✅ |
+| Tested on device | ✅ | ✅ | 🙊[[1]](#14-contributing)) |
 |--|--|--|--|
 |extra requirements| none |`xclip`|`pwsh`|
 
