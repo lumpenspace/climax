@@ -14,15 +14,17 @@
 
 ## Installation
 
-Use pip, poetry, or your favorite python package manager to install the latest version of the clipboard maximiser.
+Use pip, poetry, or your favorite python package manager to install the latest version of the clipboard maximiser: `clipboard_maximizer`.
+
+## Command Line
+
+Install with pipx:
 
 ```bash
-pip install clipboard_maximizer
+pipx install clipboard_maximizer
 ```
 
-## Usage
-
-### Command Line
+The script is available as `climax`:
 
 ```bash
 climax --help # show help
@@ -33,6 +35,20 @@ climax file1 --clipboard xclip # use a specific clipboard.
 ```
 
 ### Python API
+
+Install:
+
+```bash
+pip install clipboard_maximizer
+```
+
+Or, if you use poetry:
+
+```bash
+poetry add clipboard_maximizer
+```
+
+Use:
 
 ```python
 from clipboard_maximizer import copy_to_clipboard;
