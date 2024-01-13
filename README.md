@@ -46,6 +46,11 @@ copy_to_clipboard("file1", clipboard="xclip")
 
 ## Contributing
 
+```bash
+poetry install
+poetry run pytest
+```
+
 Contributions, in particular windows-related, are welcome.
 
 If you plan to turn this into a full multiplatform clipboard manager, please fork the project and do so; I'll happily transfer the name to you.
