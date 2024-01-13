@@ -1,5 +1,5 @@
 import click
-from clipboard_manager import copy_to_clipboard
+from clipboard_maximizer.clipboard_manager import copy_to_clipboard
 
 @click.command()
 @click.argument('files', nargs=-1, type=click.Path(exists=True))

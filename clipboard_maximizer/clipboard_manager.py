@@ -9,16 +9,20 @@ def copy_to_clipboard(files, climax_clipboard=None):
 
     if system_platform == 'Darwin' or climax_clipboard == 'applescript':
         try:
-            subprocess.run(['osascript', '--version'], check=True)
-            script_path = 'zippity/copy-macos.applescript'
-            subprocess.run(['osascript', script_path] + list(files), check=True)
+            subprocess.run(['which', 'osascript'], check=True)
         except subprocess.CalledProcessError:
             print("osascript is not installed. Please install it to use this feature.")
             sys.exit(1)
+        try:
+            script_path = './clipboard_maximizer/copy-macos.applescript'
+            subprocess.run(['osascript', script_path] + list(files), check=True)
+        except subprocess.CalledProcessError as e:
+            print("Failed to copy to the MacOS clipboard.", e.output)
+            sys.exit(1)
     elif (system_platform == 'Linux' or climax_clipboard == 'xclip'):
         try:
-            subprocess.run(['xclip', '-version'], check=True)
-            script_path = 'zippity/copy-linux-xclip.sh'
+            subprocess.run(['which', 'xclip'], check=True)
+            script_path = 'clipboard_maximizer/copy-linux-xclip.sh'
             subprocess.run([script_path] + list(files), check=True)
         except subprocess.CalledProcessError:
             raise Exception("install xclip to copy the file to clipboard")
