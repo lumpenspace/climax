@@ -44,4 +44,12 @@ copy_to_clipboard("file1")
 copy_to_clipboard("file1", clipboard="xclip")
 ```
 
+## Contributing
+
+Contributions, in particular windows-related, are welcome.
+
+If you plan to turn this into a full multiplatform clipboard manager, please fork the project and do so; I'll happily transfer the name to you.
+
+## Blah
+
 License: MIT.
