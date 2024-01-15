@@ -19,6 +19,5 @@ pytest-cov = "^4.1.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-
 [tool.poetry.scripts]
 climax = "clipboard_maximizer.cli:main"
